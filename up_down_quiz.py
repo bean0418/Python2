@@ -7,7 +7,8 @@ print("[up & down 퀴즈 프로그램]\n* 컴퓨터가 1부터 1000까지 무작
 
 while True:
     if n <= 10:
-        ans1 = int(input("숫자를 입력하세요: "))
+        opportunity = 11 - n
+        ans1 = int(input("기회는 %s번 남았습니다. 숫자를 입력하세요: " %(opportunity)))
         if ans1 == quiz_ans:
             print("정답입니다.")
             break
